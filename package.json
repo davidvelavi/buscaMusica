@@ -1,0 +1,11 @@
+{
+  "name": "busca-musica",
+  "version": "0.1.0",
+  "description": "aplicacacion para buscar tu artista y tu musica favorita",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "david velazquez",
+  "license": "ISC"
+}
