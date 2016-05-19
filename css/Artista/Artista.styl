@@ -1,0 +1,46 @@
+.Artista
+	margin-top 10px
+	padding 10px
+	background-color blanco
+	&-Nombre
+		text-align center
+		margin-bottom 5px
+		font-size 20px
+		color azulD
+		font-weight bold
+	&-ContImg
+		box-shadow 0px 2px 1px azulD
+		font-size 0
+		width 100%
+		margin-bottom 20px
+	&-Img
+		width 100%
+	&-Items
+		position relative
+		margin-bottom 10px
+		padding 10px
+		border-radius 4px
+		background-color gris
+		box-shadow 0px 2px 2px rgba(negro,0.3)
+		&:before
+			content ""
+			position absolute
+			width 50%
+			bottom 0
+			left 0
+			right 0
+			margin auto
+			background-color azulD
+			height 2px
+	&-Item
+		display flex
+		justify-content space-between
+		list-style none
+		line-height 30px
+		font-size 12px
+		li
+			list-style none
+	&-Title
+		font-weight  bold
+		font-size 14px
+		color azulD

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Busca musica</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../estilos.css">
+  </head>
+  <body ng-app="musica">
+    <header class="Header"></header>
+    <section ng-controller="BuscarMusica" class="Buscador">
+      <div class="Buscador-ContInput">
+        <input ng-model="artista" class="Buscador-Input">
+        <div class="Buscador-Botonera"><span ng-click="buscar(artista)" class="Buscador-Boton">Buscar</span></div>
+        <section class="Artista">
+          <p class="Artista-Nombre">{{Artista.nombre}}</p>
+          <figure class="Artista-ContImg"><img ng-src="{{Artista.img}}" alt="" class="Artista-Img"></figure>
+          <ul ng-repeat="track in Artista.tracks" class="Artista-Items">
+            <li class="Artista-Item"> <span class="Artista-Title">Canción</span>{{track.cancion}}</li>
+            <li class="Artista-Item"><span class="Artista-Title">Interprete(s):</span>
+              <ul>
+                <li ng-repeat="interprete in track.interpretes">{{interprete}}</li>
+              </ul>
+            </li>
+            <li class="Artista-Item"><span class="Artista-Title">Album</span>{{track.album}}</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../app.js"></script>
+  </body>
+</html>

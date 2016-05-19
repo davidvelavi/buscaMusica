@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    title Busca musica
+    link(href='https://fonts.googleapis.com/css?family=Dosis:400,300' rel='stylesheet' type='text/css')
+    link(rel="stylesheet", href="../estilos.css")
+  body(ng-app='musica')
+    header.Header
+    
+    section.Buscador(ng-controller='BuscarMusica')
+      .Buscador-ContInput
+        input.Buscador-Input(ng-model="artista")
+        .Buscador-Botonera
+          span.Buscador-Boton(ng-click="buscar(artista)") Buscar
+        section.Artista
+          p.Artista-Nombre{{Artista.nombre}}
+          figure.Artista-ContImg
+            img.Artista-Img(ng-src="{{Artista.img}}", alt="")
+          ul.Artista-Items(ng-repeat="track in Artista.tracks")
+            li.Artista-Item 
+              span.Artista-Title Canción
+              {{track.cancion}}
+            li.Artista-Item
+              span.Artista-Title Interprete(s):
+              ul
+                li(ng-repeat="interprete in track.interpretes")
+                  {{interprete}}
+            li.Artista-Item
+              span.Artista-Title Album
+              {{track.album}}
+
+
+ 
+    script(src='../node_modules/angular/angular.min.js')
+    script(src='../app.js')
+     
