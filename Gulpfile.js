@@ -20,7 +20,7 @@ gulp.task("concat",function(){
 gulp.task("jade",function(){
 	gulp.src("template/jade/*.jade")
 	.pipe(jade({pretty:true}))
-	.pipe(gulp.dest("template"))
+	.pipe(gulp.dest(""))
 })
 
 

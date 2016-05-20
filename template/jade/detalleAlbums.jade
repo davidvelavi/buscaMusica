@@ -1,0 +1,8 @@
+section.DetalleAlbum(ng-controller="AlbumController")
+	section.Artista
+		p.Artista-Nombre{{Album.nombre}}
+		figure.Artista-ContImg
+			img.Artista-Img(ng-src="{{Album.img}}", alt="")
+		span.Artista-Title Canción 
+		ul.Artista-Items
+			li.Artista-Canciones(ng-repeat="cancion in Album.tracks"){{cancion.nombre}}

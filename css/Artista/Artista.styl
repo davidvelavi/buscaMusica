@@ -32,15 +32,35 @@
 			margin auto
 			background-color azulD
 			height 2px
+	&-Canciones
+		display flex
+		justify-content space-between
+		list-style none
+		line-height 30px
+		font-size 14px
+		font-weight bold
 	&-Item
 		display flex
 		justify-content space-between
 		list-style none
 		line-height 30px
 		font-size 12px
+		&:first-of-type,
+		&:last-of-type
+			font-weight bold
+			font-size 14px
 		li
 			list-style none
+			font-size 12px
+		a
+			font-size 14px
+			font-weight bold
+			color azul
 	&-Title
 		font-weight  bold
 		font-size 14px
 		color azulD
+.DetalleAlbum
+	margin: 0 auto
+	margin-top: 80px
+	width: 90%

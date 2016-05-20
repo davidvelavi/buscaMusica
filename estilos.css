@@ -92,6 +92,24 @@
   background-color: #00b2d0;
   height: 2px;
 }
+.Artista-Canciones {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  list-style: none;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
 .Artista-Item {
   display: -webkit-box;
   display: -moz-box;
@@ -109,13 +127,29 @@
   line-height: 30px;
   font-size: 12px;
 }
+.Artista-Item:first-of-type,
+.Artista-Item:last-of-type {
+  font-weight: bold;
+  font-size: 14px;
+}
 .Artista-Item li {
   list-style: none;
+  font-size: 12px;
+}
+.Artista-Item a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #04d3e5;
 }
 .Artista-Title {
   font-weight: bold;
   font-size: 14px;
   color: #00b2d0;
+}
+.DetalleAlbum {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 90%;
 }
 * {
   font-family: 'Dosis', sans-serif;

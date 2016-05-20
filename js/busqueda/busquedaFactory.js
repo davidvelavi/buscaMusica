@@ -7,6 +7,9 @@
 				},
 				busquedaTracks:function(url){
 					return $http.get(url);
+				},
+				busquedaAlbum:function(url){
+					return $http.get(url);
 				}
 		}
 	}

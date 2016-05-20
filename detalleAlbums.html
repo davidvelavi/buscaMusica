@@ -1,0 +1,10 @@
+
+<section ng-controller="AlbumController" class="DetalleAlbum">
+  <section class="Artista">
+    <p class="Artista-Nombre">{{Album.nombre}}</p>
+    <figure class="Artista-ContImg"><img ng-src="{{Album.img}}" alt="" class="Artista-Img"/></figure><span class="Artista-Title">Canción </span>
+    <ul class="Artista-Items">
+      <li ng-repeat="cancion in Album.tracks" class="Artista-Canciones">{{cancion.nombre}}</li>
+    </ul>
+  </section>
+</section>
