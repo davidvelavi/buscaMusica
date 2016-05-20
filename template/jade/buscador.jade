@@ -4,8 +4,8 @@ section.Buscador(ng-controller='BuscarMusica')
     .Buscador-Botonera
       span.Buscador-Boton(ng-click="buscar(artista)") Buscar
     <loader></loader>
+    p{{Mensaje}}
     section.Artista(ng-hide="Hide")
-      p{{Mensaje}}
       p.Artista-Nombre{{Artista.nombre}}
       figure.Artista-ContImg
         img.Artista-Img(ng-src="{{Artista.img}}", alt="")

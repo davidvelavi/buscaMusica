@@ -44,15 +44,18 @@
 				      			track = {};
 				      		}
 			      			//console.log("tracks",$scope.Artista.tracks)
+			      			$scope.HideLoader = true;
+		      				$scope.Hide = false;
 			      	})
 			    }
 			    else{
 			    	$scope.Artista={};
 	      			$scope.Artista.tracks=[];
 	      			$scope.Mensaje = "artista no encontrado";
+	      			$scope.HideLoader = true;
+		      		$scope.Hide = true;
 			    }
-		      		$scope.HideLoader = true;
-		      		$scope.Hide = false;
+		      		
 
 
 		      })
