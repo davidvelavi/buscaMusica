@@ -3,6 +3,12 @@ section.Buscador(ng-controller='BuscarMusica')
     input.Buscador-Input(ng-model="artista")
     .Buscador-Botonera
       span.Buscador-Boton(ng-click="buscar(artista)") Buscar
+    ul.Buscador-Similares
+      li.Buscador-SimilaresTitle(ng-click="Relacionado == true ? Relacionado = false : Relacionado = true") Artistas Relacionado: 
+        span {{RelacionadoLength}}
+        ul.Buscador-SimilaresCont(ng-hide="Relacionado")
+          li(ng-repeat="similar in OtrasOpciones") 
+            {{similar.nombre}}
     <loader></loader>
     p{{Mensaje}}
     section.Artista(ng-hide="Hide")
