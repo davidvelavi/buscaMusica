@@ -12,16 +12,38 @@
 		box-shadow 0px 2px 1px azulD
 		font-size 0
 		width 100%
+		transition 0.3s
 		margin-bottom 20px
+		@media screen and (min-width:1024px)
+			width 70%
+			margin 0 auto
+			margin-bottom 20px
 	&-Img
 		width 100%
+	&-Wrapper
+		transition 0.3s
+		@media screen and (min-width:768px)
+			display flex
+			flex-wrap wrap
+			justify-content space-between
 	&-Items
 		position relative
 		margin-bottom 10px
 		padding 10px
 		border-radius 4px
 		background-color gris
+		transition 0.3s
 		box-shadow 0px 2px 2px rgba(negro,0.3)
+		@media screen and (min-width:768px)
+			width 45%
+		@media screen and (min-width:1024px)
+			width 30%
+		&.CancionesCont
+			width auto
+			@media screen and (min-width:768px)
+				display flex
+				flex-wrap: wrap
+				justify-content: space-between
 		&:before
 			content ""
 			position absolute
@@ -38,7 +60,15 @@
 		list-style none
 		line-height 30px
 		font-size 14px
+		padding-left 5px
+		background-color blanco
 		font-weight bold
+		margin-top 5px
+		box-shadow 0px 2px 2px rgba(negro,0.2)
+		@media screen and (min-width:768px)
+			width 48%
+		@media screen and (min-width:1024px)
+			width 32%
 	&-Item
 		display flex
 		justify-content space-between
@@ -60,7 +90,15 @@
 		font-weight  bold
 		font-size 14px
 		color azulD
+		&.especial
+			font-size 18px
+			display block
+			margin-bottom 10px
 .DetalleAlbum
 	margin: 0 auto
 	margin-top: 80px
 	width: 90%
+.Loader
+	text-align center
+	p
+		font-weight bold
