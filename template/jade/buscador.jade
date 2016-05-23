@@ -1,6 +1,6 @@
 section.Buscador(ng-controller='BuscarMusica')
   .Buscador-ContInput
-    input.Buscador-Input(ng-model="artista")
+    input.Buscador-Input(ng-model="artista",placeholder="Introduce un cantante")
     .Buscador-Botonera
       span.Buscador-Boton(ng-click="buscar(artista)") Buscar
     ul.Buscador-Similares(ng-hide="Hide")

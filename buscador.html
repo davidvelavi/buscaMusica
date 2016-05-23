@@ -1,7 +1,7 @@
 
 <section ng-controller="BuscarMusica" class="Buscador">
   <div class="Buscador-ContInput">
-    <input ng-model="artista" class="Buscador-Input"/>
+    <input ng-model="artista" placeholder="Introduce un cantante" class="Buscador-Input"/>
     <div class="Buscador-Botonera"><span ng-click="buscar(artista)" class="Buscador-Boton">Buscar</span></div>
     <ul ng-hide="Hide" class="Buscador-Similares">
       <li ng-click="Relacionado == true ? Relacionado = false : Relacionado = true" class="Buscador-SimilaresTitle">Artistas Relacionado: <span>{{RelacionadoLength}}</span>
