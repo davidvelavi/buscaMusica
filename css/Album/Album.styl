@@ -1,0 +1,41 @@
+.Album
+	width 100%
+	@media screen and (min-width: 768px)
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+	&-Wrapper
+		width 100%
+		margin-top  30px
+	&-Titulo
+		color moradol
+		font-size 18px
+	&-Item
+		width 100%
+		margin-top 20px
+		list-style none
+		padding-bottom  10px
+		border-bottom 2px solid morado
+		@media screen and (min-width: 768px)
+			width 48%
+	&-Nombre
+		color morado
+		font-size 18px
+		font-weight bold
+		margin-bottom  10px
+	&-ContImg
+		width 100%
+	&-Img
+		width 100%
+.Track
+	&-Titulo
+		color morado
+	&-Item
+		color rosa
+		font-weight bold
+		font-size 16px
+		list-style none
+		padding-left 15px
+		margin-top 5px
+		&:not(:last-child)
+			border-bottom 1px solid moradoll

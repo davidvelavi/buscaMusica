@@ -3,29 +3,27 @@ section.Buscador(ng-controller='BuscarMusica')
     input.Buscador-Input(ng-model="artista")
     .Buscador-Botonera
       span.Buscador-Boton(ng-click="buscar(artista)") Buscar
-    ul.Buscador-Similares
+    ul.Buscador-Similares(ng-hide="Hide")
       li.Buscador-SimilaresTitle(ng-click="Relacionado == true ? Relacionado = false : Relacionado = true") Artistas Relacionado: 
         span {{RelacionadoLength}}
         ul.Buscador-SimilaresCont(ng-hide="Relacionado")
-          li(ng-repeat="similar in OtrasOpciones") 
+          li(ng-repeat="similar in OtrasOpciones",ng-click="busquedaArtista(similar.id)") 
             {{similar.nombre}}
     <loader></loader>
-    p{{Mensaje}}
+    p.Artista-Mensaje{{Mensaje}}
     section.Artista(ng-hide="Hide")
       p.Artista-Nombre{{Artista.nombre}}
       figure.Artista-ContImg
         img.Artista-Img(ng-src="{{Artista.img}}", alt="")
-      section.Artista-Wrapper
-        ul.Artista-Items(ng-repeat="track in Artista.tracks")
-          li.Artista-Item 
-            span.Artista-Title Canción
-            {{track.cancion}}
-          li.Artista-Item
-            span.Artista-Title Interprete(s):
-            ul
-              li(ng-repeat="interprete in track.interpretes")
-                {{interprete}}
-          li.Artista-Item
-            span.Artista-Title Album
-            a(ui-sref="album({id:track.id})" href="#")
-              {{track.album}}
+      p.Album-Titulo Albums
+      section.Album-Wrapper
+        ul.Album
+          li.Album-Item(ng-repeat="album in Artista.albums")
+            p.Album-Nombre{{album.nombre}}
+            figure.Album-ContImg
+              img.Album-Img(ng-src="{{album.img}}", alt="")
+            ul.Track-Wrapper
+              p.Track-Titulo Tracks
+              li.Track-Item(ng-repeat ="track in album.tracks")
+                {{track.nombre}}
+      

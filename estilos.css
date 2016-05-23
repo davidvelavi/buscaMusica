@@ -1,5 +1,5 @@
 .Header {
-  background-color: #00b2d0;
+  background-color: #363c4a;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -16,22 +16,23 @@
   width: 100%;
 }
 .Buscador-Input {
+  background-color: #6e7280;
   width: 100%;
   height: 30px;
   border: none;
   outline: none;
+  color: #f9f9f9;
   padding-left: 15px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  border-bottom: 2px solid #00b2d0;
 }
 .Buscador-Botonera {
   text-align: right;
 }
 .Buscador-Boton {
-  background-color: #04d3e5;
-  -webkit-box-shadow: inset 0px -5px #00b2d0;
-  box-shadow: inset 0px -5px #00b2d0;
+  background-color: #6e7280;
+  -webkit-box-shadow: inset 0px -5px #434a5b;
+  box-shadow: inset 0px -5px #434a5b;
   cursor: pointer;
   display: inline-block;
   height: 35px;
@@ -40,14 +41,14 @@
   line-height: 30px;
   margin-top: 10px;
   text-align: center;
-  color: #fff;
+  color: #f9f9f9;
   font-weight: bold;
   width: 100px;
 }
 .Buscador-Boton:hover {
   line-height: 35px;
-  -webkit-box-shadow: inset 0px -35px #00b2d0;
-  box-shadow: inset 0px -35px #00b2d0;
+  -webkit-box-shadow: inset 0px -35px #434a5b;
+  box-shadow: inset 0px -35px #434a5b;
 }
 .Buscador-Similares {
   margin-top: 30px;
@@ -55,11 +56,11 @@
 }
 .Buscador-SimilaresTitle {
   list-style: none;
-  color: #00b2d0;
+  color: #363c4a;
   cursor: pointer;
   font-weight: bold;
   margin-bottom: 10px;
-  border-bottom: 4px solid #00b2d0;
+  border-bottom: 4px solid #434a5b;
   padding-bottom: 5px;
 }
 .Buscador-SimilaresTitle span {
@@ -71,13 +72,13 @@
   width: 100%;
 }
 .Buscador-SimilaresCont li {
-  background-color: #00b2d0;
-  -webkit-box-shadow: inset 0px -3px #04d3e5;
-  box-shadow: inset 0px -3px #04d3e5;
-  color: #fff;
+  background-color: #363c4a;
+  -webkit-box-shadow: inset 0px -3px #434a5b;
+  box-shadow: inset 0px -3px #434a5b;
+  color: #f9f9f9;
   cursor: pointer;
   height: 30px;
-  line-height: 23px;
+  line-height: 25px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   list-style: none;
@@ -87,217 +88,106 @@
 }
 .Buscador-SimilaresCont li:hover {
   line-height: 30px;
-  -webkit-box-shadow: inset 0px -30px #00b2d0;
-  box-shadow: inset 0px -30px #00b2d0;
+  -webkit-box-shadow: inset 0px -30px #434a5b;
+  box-shadow: inset 0px -30px #434a5b;
 }
 .Artista {
   margin-top: 10px;
   padding: 10px;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 .Artista-Nombre {
   text-align: center;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #00b2d0;
+  color: #ee3c6c;
   font-weight: bold;
 }
 .Artista-ContImg {
-  -webkit-box-shadow: 0px 2px 1px #00b2d0;
-  box-shadow: 0px 2px 1px #00b2d0;
-  font-size: 0;
   width: 100%;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .Artista-ContImg {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
 }
 .Artista-Img {
   width: 100%;
 }
-.Artista-Wrapper {
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-}
-@media screen and (min-width: 768px) {
-  .Artista-Wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -o-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-  }
-}
-.Artista-Items {
-  position: relative;
-  margin-bottom: 10px;
-  padding: 10px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #cfefee;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-box-shadow: 0px 2px 2px rgba(51,51,51,0.3);
-  box-shadow: 0px 2px 2px rgba(51,51,51,0.3);
-}
-@media screen and (min-width: 768px) {
-  .Artista-Items {
-    width: 45%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .Artista-Items {
-    width: 30%;
-  }
-}
-.Artista-Items.CancionesCont {
-  width: auto;
-}
-@media screen and (min-width: 768px) {
-  .Artista-Items.CancionesCont {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -o-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-  }
-}
-.Artista-Items:before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #00b2d0;
-  height: 2px;
-}
-.Artista-Canciones {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  list-style: none;
-  line-height: 30px;
-  font-size: 14px;
-  padding-left: 5px;
-  background-color: #fff;
-  font-weight: bold;
-  margin-top: 5px;
-  -webkit-box-shadow: 0px 2px 2px rgba(51,51,51,0.2);
-  box-shadow: 0px 2px 2px rgba(51,51,51,0.2);
-}
-@media screen and (min-width: 768px) {
-  .Artista-Canciones {
-    width: 48%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .Artista-Canciones {
-    width: 32%;
-  }
-}
-.Artista-Item {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  list-style: none;
-  line-height: 30px;
-  font-size: 12px;
-}
-.Artista-Item:first-of-type,
-.Artista-Item:last-of-type {
-  font-weight: bold;
-  font-size: 14px;
-}
-.Artista-Item li {
-  list-style: none;
-  font-size: 12px;
-}
-.Artista-Item a {
-  font-size: 14px;
-  font-weight: bold;
-  color: #04d3e5;
-}
-.Artista-Title {
-  font-weight: bold;
-  font-size: 14px;
-  color: #00b2d0;
-}
-.Artista-Title.especial {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
-}
-.DetalleAlbum {
-  margin: 0 auto;
-  margin-top: 80px;
-  width: 90%;
+.Artista-Mensaje {
+  color: #363c4a;
 }
 .Loader {
   text-align: center;
 }
 .Loader p {
   font-weight: bold;
+}
+.Album {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .Album {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.Album-Wrapper {
+  width: 100%;
+  margin-top: 30px;
+}
+.Album-Titulo {
+  color: #434a5b;
+  font-size: 18px;
+}
+.Album-Item {
+  width: 100%;
+  margin-top: 20px;
+  list-style: none;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #363c4a;
+}
+@media screen and (min-width: 768px) {
+  .Album-Item {
+    width: 48%;
+  }
+}
+.Album-Nombre {
+  color: #363c4a;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.Album-ContImg {
+  width: 100%;
+}
+.Album-Img {
+  width: 100%;
+}
+.Track-Titulo {
+  color: #363c4a;
+}
+.Track-Item {
+  color: #ee3c6c;
+  font-weight: bold;
+  font-size: 16px;
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.Track-Item:not(:last-child) {
+  border-bottom: 1px solid #6e7280;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -309,5 +199,5 @@
   padding: 0;
 }
 body {
-  background-color: #cfefee;
+  background-color: #f9f9f9;
 }
