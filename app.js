@@ -16,9 +16,10 @@
 	      	busquedaFactory.busquedaArtista(url).success(function(resp){
 	      		//console.log(resp)
 	      		var id = resp.id;
+	      		console.log(id)
 	      		$scope.Artista.img = resp.images[0].url;
 			    $scope.Artista.nombre = resp.name;
-			    var urlAlbums= "https://api.spotify.com/v1/artists/"+id+"/albums";
+			    var urlAlbums= "https://api.spotify.com/v1/artists/"+id+"/albums?limit=50";
 			    busquedaFactory.busquedaAlbum(urlAlbums).success(function(resp){
 			    	
 			    	var arregloPeticionesTracks=[]

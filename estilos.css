@@ -163,6 +163,11 @@
     width: 48%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .Album-Item {
+    width: 30%;
+  }
+}
 .Album-Nombre {
   color: #363c4a;
   font-size: 18px;
